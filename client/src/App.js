@@ -1,7 +1,9 @@
 import { Container } from "react-bootstrap";
+import { Outlet } from "react-router-dom";
 import Header from "./components/header";
 import Footer from "./components/Footer";
 import React from 'react'
+
 
 
 const App = () => {
@@ -10,9 +12,9 @@ const App = () => {
 
      <Header/>
       <main className='py-3'>
-        <container>
-          <h1>Welcome to ProShop</h1>
-        </container>
+        <Container>
+          <Outlet/>
+        </Container>
       </main>
       <Footer/>
      
@@ -22,4 +24,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App 
