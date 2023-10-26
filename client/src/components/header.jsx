@@ -1,10 +1,10 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
-import logos from "../assets/news.png";
 import { LinkContainer } from 'react-router-bootstrap'
+import logos from "../assets/news.png";
 
-import React from "react";
-import { Link } from "react-router-dom";
+
+
 
 const Header = () => {
   return (
@@ -35,7 +35,7 @@ const Header = () => {
             </Nav.Link>
             </LinkContainer>
 
-            
+
           </Nav>
         </Container>
       </Navbar>

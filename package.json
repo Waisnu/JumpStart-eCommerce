@@ -1,0 +1,31 @@
+{
+  "name": "jumpstart-ecommerce",
+  "version": "1.0.0",
+  "description": "JumpStart eCommerce built with the MERN Stack for my CPL Capstone -JhonnVincentArcipe",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Waisnu/JumpStart-eCommerce.git"
+  },
+  "author": "Jhonn Vincent Arcipe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Waisnu/JumpStart-eCommerce/issues"
+  },
+  "homepage": "https://github.com/Waisnu/JumpStart-eCommerce#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
+  }
+}
