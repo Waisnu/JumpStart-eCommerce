@@ -47,8 +47,8 @@ const Header = () => {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
               <SearchBox />
-              <LinkContainer to='/cart' className=''>
-              <Nav.Link className="darker-text">
+              <LinkContainer to='/cart' >
+              <Nav.Link className="">
                   <FaShoppingCart /> Cart
                   {cartItems.length > 0 && (
                     <Badge pill bg='success' style={{ marginLeft: '5px' }}>
@@ -69,8 +69,8 @@ const Header = () => {
                   </NavDropdown>
                 </>
               ) : (
-                <LinkContainer to='/login'>
-                  <Nav.Link>
+                <LinkContainer to='/login' className=''>
+                  <Nav.Link className=''>
                     <FaUser /> Sign In
                   </Nav.Link>
                 </LinkContainer>

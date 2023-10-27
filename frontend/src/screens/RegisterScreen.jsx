@@ -106,6 +106,14 @@ const RegisterScreen = () => {
           </Link>
         </Col>
       </Row>
+      <Row className='py-3'>
+        <Col>
+          Or you can use a demo account{' '}
+          <Link to="https://pastes.dev/6QE9fchgae" target='_blank'>
+            DEMO
+          </Link>
+        </Col>
+      </Row>
     </FormContainer>
   );
 };

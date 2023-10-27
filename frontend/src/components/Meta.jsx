@@ -11,8 +11,8 @@ const Meta = ({ title, description, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: 'Welcome To ProShop',
-  description: 'We sell the best products for cheap',
+  title: 'JumpStart eCommerce',
+  description: 'Your Fashion and Electronics Store, all in one place, at the best prices!',
   keywords: 'electronics, buy electronics, cheap electroincs',
 };
 

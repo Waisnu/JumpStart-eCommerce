@@ -42,10 +42,10 @@ const LoginScreen = () => {
   };
 
   return (
-    <FormContainer>
+    <FormContainer  className="FormContainer">
       <h1>Sign In</h1>
 
-      <Form onSubmit={submitHandler}>
+      <Form className="Form" onSubmit={submitHandler}>
         <Form.Group className='my-2' controlId='email'>
           <Form.Label>Email Address</Form.Label>
           <Form.Control
@@ -77,9 +77,14 @@ const LoginScreen = () => {
         <Col>
           New Customer?{' '}
           <Link to={redirect ? `/register?redirect=${redirect}` : '/register'}>
-            Register
+            Register   
+          </Link>
+          .....👉{' '}
+          <Link to="https://pastes.dev/6QE9fchgae" target='_blank'>
+            ADMIN LOGINS
           </Link>
         </Col>
+       
       </Row>
     </FormContainer>
   );
