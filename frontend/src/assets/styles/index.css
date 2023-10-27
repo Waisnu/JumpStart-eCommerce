@@ -51,3 +51,52 @@ table th {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
 }
+
+/* Custom CSS for making the text bigger */
+.navbar-brand-bigger {
+  padding: 1px;
+  margin: 30px;
+  ;
+  font-size: 35px;
+  font-weight: bold; /* Adjust the font size as needed */
+}
+
+.navbar-custom {
+  background-color: #343a40; /* Dark background color */
+  color: #ffffff; /* Light text color */
+}
+
+/* In a CSS file or within your component's CSS modules */
+.logo-img {
+  margin-right: 10px; /* Adjust the margin as needed to create the desired space */
+}
+
+/* In a CSS file or within your component's CSS modules */
+.darker-text {
+  
+  color: ; /* You can adjust the color to make the text slightly darker */
+}
+
+.fixed-width-card {
+  width: 300px; /* Set your desired width here */
+  height: 450px; /* Set your desired height here */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* You can also set other styling properties like padding, margin, etc. */
+}
+
+.card-image-container {
+  width: 100%;
+  height: 100%; /* Adjust the height as needed to fit the image properly within the card */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image-container img {
+  width: 100%; /* Adjust the image width as needed */
+  height: 80%;
+  object-fit: cover;
+}
