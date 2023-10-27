@@ -1,36 +1,35 @@
 {
-  "name": "jumpstart-ecommerce",
-  "version": "1.0.0",
-  "description": "JumpStart eCommerce built with the MERN Stack for my CPL Capstone -JhonnVincentArcipe",
+  "name": "jumpstart",
+  "version": "2.0.0",
   "type": "module",
+  "description": "Ecommerce application built with the MERN stack for CPL CAPSTONE",
   "main": "server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "server": "nodemon server/server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\" ",
-    "data:import": "node server/seeders.js",
-    "data:destroy": "node server/seeders.js -d"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Waisnu/JumpStart-eCommerce.git"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "generate-toc": "markdown-toc -i readme.md"
   },
   "author": "Jhonn Vincent Arcipe",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Waisnu/JumpStart-eCommerce/issues"
-  },
-  "homepage": "https://github.com/Waisnu/JumpStart-eCommerce#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^7.6.3"
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.1",
+    "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "dotenv": "^16.3.1",
-    "nodemon": "^3.0.1"
+    "@types/express": "^4.17.17",
+    "concurrently": "^7.6.0",
+    "markdown-toc": "^1.2.0",
+    "nodemon": "^2.0.21"
   }
 }
