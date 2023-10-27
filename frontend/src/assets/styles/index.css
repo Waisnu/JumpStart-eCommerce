@@ -77,10 +77,11 @@ table th {
   
   width: 300px; /* Set your desired width here */
   height: 450px; /* Set your desired height here */
+  text-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("https://img.freepik.com/free-vector/winter-blue-pink-gradient-background-vector_53876-117276.jpg?w=1380&t=st=1698438546~exp=1698439146~hmac=062992a16569fa3144500d90556366fa33957856c76ed1a968eb5e9ace0520d3");
+  background-image: url('https://images.unsplash.com/photo-1556139943-4bdca53adf1e?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-repeat: no-repeat; /* Prevent repeating the image */
   background-attachment: fixed; /* Fix the background image in place */
   background-position: center center; /* Cente
@@ -96,6 +97,7 @@ table th {
   align-items: center;
   justify-content: center;
  
+ 
 }
 
 .card-image-container img {
@@ -108,6 +110,7 @@ table th {
   justify-content: center; /* Horizontally center */
   align-items: center; /* Vertically center */
   padding: 10px;
+  
 
  /* Adjust this based on your layout */
 }

@@ -8,40 +8,56 @@ const CheckoutSteps = ({ step1, step2, step3, step4 }) => {
       <Nav.Item>
         {step1 ? (
           <LinkContainer to='/login'>
-            <Nav.Link>Sign In</Nav.Link>
+            <Nav.Link>
+              Sign In <span role="img" aria-label="hand-emoji">🔥</span>
+            </Nav.Link>
           </LinkContainer>
         ) : (
-          <Nav.Link disabled>Sign In</Nav.Link>
+          <Nav.Link disabled>
+            Sign In {step1 && <span role="img" aria-label="hand-emoji">🔥</span>}
+          </Nav.Link>
         )}
       </Nav.Item>
 
       <Nav.Item>
         {step2 ? (
           <LinkContainer to='/shipping'>
-            <Nav.Link>Shipping</Nav.Link>
+            <Nav.Link>
+              Shipping {step2 && <span role="img" aria-label="hand-emoji">🔥</span>}
+            </Nav.Link>
           </LinkContainer>
         ) : (
-          <Nav.Link disabled>Shipping</Nav.Link>
+          <Nav.Link disabled>
+            Shipping {step2 && <span role="img" aria-label="hand-emoji">🔥</span>}
+          </Nav.Link>
         )}
       </Nav.Item>
 
       <Nav.Item>
         {step3 ? (
           <LinkContainer to='/payment'>
-            <Nav.Link>Payment</Nav.Link>
+            <Nav.Link>
+              Payment {step3 && <span role="img" aria-label="hand-emoji">🔥</span>}
+            </Nav.Link>
           </LinkContainer>
         ) : (
-          <Nav.Link disabled>Payment</Nav.Link>
+          <Nav.Link disabled>
+            Payment {step3 && <span role="img" aria-label="hand-emoji">🔥</span>}
+          </Nav.Link>
         )}
       </Nav.Item>
 
       <Nav.Item>
         {step4 ? (
           <LinkContainer to='/placeorder'>
-            <Nav.Link>Place Order</Nav.Link>
+            <Nav.Link>
+              Place Order {step4 && <span role="img" aria-label="hand-emoji">🔥</span>}
+            </Nav.Link>
           </LinkContainer>
         ) : (
-          <Nav.Link disabled>Place Order</Nav.Link>
+          <Nav.Link disabled>
+            Place Order {step4 && <span role="img" aria-label="hand-emoji">🔥</span>}
+          </Nav.Link>
         )}
       </Nav.Item>
     </Nav>

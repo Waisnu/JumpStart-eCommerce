@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import FormContainer from '../components/FormContainer';
 import CheckoutSteps from '../components/CheckoutSteps';
 import { savePaymentMethod } from '../slices/cartSlice';
+import { Link } from 'react-router-dom';
 
 const PaymentScreen = () => {
   const navigate = useNavigate();
@@ -51,6 +52,10 @@ const PaymentScreen = () => {
         <Button type='submit' variant='primary'>
           Continue
         </Button>
+
+        <Link to="/paypal-demo-account" target="_blank" style={{padding: 5}}>
+        👉 PAYPAL DEMO ACCOUNT 👈
+    </Link>
       </Form>
     </FormContainer>
   );
