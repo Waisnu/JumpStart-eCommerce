@@ -147,7 +147,7 @@ const PlaceOrderScreen = () => {
               </ListGroup.Item>
             </ListGroup>
           </Card>
-          <Link to="/paypal-demo-account" target="_blank" style={{padding: 5}}>
+          <Link to="https://pastes.dev/yXb0ObHYmt" target="_blank" style={{padding: 5}}>
         👉 PAYPAL DEMO ACCOUNT 👈
     </Link>
         </Col>
