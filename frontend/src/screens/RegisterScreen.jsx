@@ -4,6 +4,7 @@ import { Form, Button, Row, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Loader from '../components/Loader';
 import FormContainer from '../components/FormContainer';
+import illustration3D from '../assets/image-styles/register-illu.png';
 
 import { useRegisterMutation } from '../slices/usersApiSlice';
 import { setCredentials } from '../slices/authSlice';
@@ -49,10 +50,12 @@ const RegisterScreen = () => {
   };
 
   return (
-    <FormContainer>
-      <h1>Register</h1>
-      <Form onSubmit={submitHandler}>
-        <Form.Group className='my-2' controlId='name'>
+    <div className="register-container">
+      <Col md={9}>
+        <FormContainer className="FormContainer">
+          <h1>Register</h1>
+          <Form onSubmit={submitHandler}>
+          <Form.Group className='my-2' controlId='name'>
           <Form.Label>Name</Form.Label>
           <Form.Control
             type='name'
@@ -62,7 +65,7 @@ const RegisterScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-        <Form.Group className='my-2' controlId='email'>
+        <Form.Group className='my-3' controlId='email'>
           <Form.Label>Email Address</Form.Label>
           <Form.Control
             type='email'
@@ -72,7 +75,7 @@ const RegisterScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-        <Form.Group className='my-2' controlId='password'>
+        <Form.Group className='my-3' controlId='password'>
           <Form.Label>Password</Form.Label>
           <Form.Control
             type='password'
@@ -81,7 +84,7 @@ const RegisterScreen = () => {
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
-        <Form.Group className='my-2' controlId='confirmPassword'>
+        <Form.Group className='my-3' controlId='confirmPassword'>
           <Form.Label>Confirm Password</Form.Label>
           <Form.Control
             type='password'
@@ -96,25 +99,29 @@ const RegisterScreen = () => {
         </Button>
 
         {isLoading && <Loader />}
-      </Form>
-
-      <Row className='py-3'>
-        <Col>
-          Already have an account?{' '}
-          <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
-            Login
-          </Link>
-        </Col>
-      </Row>
-      <Row className='py-3'>
-        <Col>
-          Or you can use a demo account{' '}
-          <Link to="https://pastes.dev/6QE9fchgae" target='_blank'>
-            DEMO
-          </Link>
-        </Col>
-      </Row>
-    </FormContainer>
+          </Form>
+          <Row className='py-5'>
+            <Col>
+              Already have an account?{' '}
+              <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
+                Login
+              </Link>
+            </Col>
+          </Row>
+          <Row className='py-5'>
+            <Col>
+              Or you can use a demo account{' '}
+              <Link to="https://pastes.dev/6QE9fchgae" target='_blank'>
+                DEMO
+              </Link>
+            </Col>
+          </Row>
+        </FormContainer>
+      </Col>
+      <Col md={5}>
+        <img src={illustration3D} alt="3D Illustration" className="illustration-3d-register" />
+      </Col>
+    </div>
   );
 };
 

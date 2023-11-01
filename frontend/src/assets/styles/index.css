@@ -81,7 +81,7 @@ table th {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url('https://images.unsplash.com/photo-1556139943-4bdca53adf1e?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url('../../assets/bg.jpg');
   background-repeat: no-repeat; /* Prevent repeating the image */
   background-attachment: fixed; /* Fix the background image in place */
   background-position: center center; /* Cente
@@ -137,4 +137,184 @@ html {
   scroll-behavior: smooth;
 }
 
+/* LoginScreen.css */
+.illustration-3d-login {
 
+  max-width: 100%; /* Adjust the maximum width as needed */
+  max-height: 600px; /* Adjust the maximum height as needed */
+  /* You can also add other styles if necessary */;
+}
+
+.illustration-3d-register {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  height: 600px; /* Maintain the aspect ratio */
+}
+
+/* Your CSS file, e.g., LoginScreen.css */
+.login-container {
+  display: flex;
+  align-items: center;
+}
+
+/* RegisterScreen.css */
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Create space between form and illustration */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.FormContainer {
+  padding: 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.Form {
+  max-width: 400px; /* Adjust the maximum form width as needed */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+
+
+/* Additional styling for form fields or links can be added here */
+
+
+
+/* HomeScreen.css */
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px; /* Add padding to separate the sections */
+}
+
+.illustration-image-home {
+  max-width: 160%;
+  height: auto;
+  margin-left: 130px;
+}
+.illustration-image-delivery {
+  max-width: 100%;
+  height: 500px;
+  
+}
+.illustration-image-payment {
+  max-width: 100%;
+  height: 300px;
+  
+}
+.illustration-image-shopping {
+  max-width: 100%;
+  height:600px;
+  
+}
+
+/* HomeScreen.css */
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.heading {
+  max-width: 100%;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.heading-delivery {
+  text-align: end;
+  max-width: 100%;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Base Button Styles */
+.btn-primary{
+  background-color: #000;
+  border: 2px solid #000;
+  color: #fff;
+  padding: 12px 24px; /* Adjust padding for better responsiveness */
+  text-decoration: none;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-size: 16px; /* Adjust the font size as needed */
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Hover Styles */
+.btn-primary:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .btn-primary {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* You can add more media queries and adjust styles for different screen sizes */
+
+
+
+.sponsors-section {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px; /* Add padding to separate the sections */
+}
+.sponsors-center {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px; /* Add padding to separate the sections */
+}
+
+.sponsors-left {
+  flex: 1;
+  padding: 10px;
+}
+
+.sponsors-right {
+  flex: 1;
+  padding: 10px;
+}
+
+.sponsors-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+}
+
+.sponsors-logos img {
+  
+  max-width: 100px;
+  height: auto;
+  
+}
+
+.sponsors-logos img:last-child {
+  margin-right: 0;
+}
+
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}

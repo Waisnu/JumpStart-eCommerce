@@ -22,6 +22,7 @@ import Message from '../components/Message';
 import Meta from '../components/Meta';
 import { addToCart } from '../slices/cartSlice';
 
+
 const ProductScreen = () => {
   const { id: productId } = useParams();
 
@@ -156,8 +157,14 @@ const ProductScreen = () => {
                   </ListGroup.Item>
                 </ListGroup>
               </Card>
+              
             </Col>
           </Row>
+
+          {/* add a illustration image here*/}
+
+
+
           <Row className='review'>
             <Col md={6}>
               <h2>Reviews</h2>

@@ -11,7 +11,7 @@ const ProductCarousel = () => {
   ) : (
     <Carousel
       pause='hover'
-      className='bg-secondary mb-5'
+      className='bg-secondary mb-5 py-5'
       style={{ borderRadius: '10px', overflow: 'hidden', maxWidth: '', margin: '0 auto' }}
     >
       {products.map((product) => (

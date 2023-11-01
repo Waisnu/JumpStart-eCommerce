@@ -8,6 +8,8 @@ import FormContainer from '../components/FormContainer';
 import { useLoginMutation } from '../slices/usersApiSlice';
 import { setCredentials } from '../slices/authSlice';
 import { toast } from 'react-toastify';
+import illustration3D from '../assets/image-styles/login-illu.png'
+
 
 const LoginScreen = () => {
   const [email, setEmail] = useState('');
@@ -40,13 +42,13 @@ const LoginScreen = () => {
       toast.error(err?.data?.message || err.error);
     }
   };
-
   return (
-    <FormContainer  className="FormContainer">
-      <h1>Sign In</h1>
-
-      <Form className="Form" onSubmit={submitHandler}>
-        <Form.Group className='my-2' controlId='email'>
+    <div className="login-container">
+      <Col md={7}>
+        <FormContainer className="FormContainer" >
+          <h1>Sign In</h1>
+          <Form className="Form" onSubmit={submitHandler}>
+        <Form.Group className='my-4 py-1' controlId='email'>
           <Form.Label>Email Address</Form.Label>
           <Form.Control
             type='email'
@@ -56,7 +58,7 @@ const LoginScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-        <Form.Group className='my-2' controlId='password'>
+        <Form.Group className='my-4 py-1' controlId='password'>
           <Form.Label>Password</Form.Label>
           <Form.Control
             type='password'
@@ -73,21 +75,24 @@ const LoginScreen = () => {
         {isLoading && <Loader />}
       </Form>
 
-      <Row className='py-3'>
-        <Col>
-          New Customer?{' '}
-          <Link to={redirect ? `/register?redirect=${redirect}` : '/register'}>
-            Register   
-          </Link>
-          .....👉{' '}
-          <Link to="https://pastes.dev/6QE9fchgae" target='_blank'>
-            ADMIN LOGINS
-          </Link>
-        </Col>
-       
-      </Row>
-    </FormContainer>
+          <Row className='py-3'>
+            <Col>
+              New Customer?{' '}
+              <Link to={redirect ? `/register?redirect=${redirect}` : '/register'}>
+                Register   
+              </Link>
+              
+              
+            </Col>
+          </Row>
+        </FormContainer>
+      </Col>
+      <Col md={5}>
+        <img src={illustration3D} alt="3D Illustration" className="illustration-3d-login" />
+      </Col>
+    </div>
   );
 };
+
 
 export default LoginScreen;
