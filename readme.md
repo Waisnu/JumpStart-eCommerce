@@ -2,7 +2,7 @@
   <img src="logo-readme.png" alt="JumpStart eCommerce" width="300">
 </p>
 
-# JumpStart eCommerce Platform 🚀
+# JumpStart eCommerce Platform  🚀
 
 > Welcome to JumpStart, an eCommerce platform built with the MERN stack & Redux, primarily designed to deliver a seamless and customer-centric shopping experience. Start selling and managing your products effortlessly!
 >
